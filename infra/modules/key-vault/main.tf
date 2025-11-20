@@ -36,6 +36,7 @@ resource "azurerm_key_vault" "kv" {
     }
   }
 
+  
 # Access for backend VMSS managed identity
    dynamic "access_policy" {
     for_each = var.backend_identity_principal_id != null ? [1] : []
