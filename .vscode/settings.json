@@ -1,0 +1,30 @@
+{
+    "terraform.languageServer": {
+        "enabled": true,
+        "args": ["serve"],
+        "path": "C:\\tools\\terraform-ls.exe",
+        "settings": {
+            "terraform": {
+                "completion": {
+                    "limit": 1000
+                }
+            }
+        }
+    },
+
+    "terraform.experimentalFeatures.prefillRequiredFields": true,
+
+    // Ensure editor suggestions are fully enabled for Terraform files
+    "editor.quickSuggestions": { "other": true, "comments": true, "strings": true },
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.suggest.showWords": true,
+
+    // Make sure .tf and .tfvars are associated with the Terraform language
+    "files.associations": {
+        "*.tf": "terraform",
+        "*.tfvars": "terraform"
+    },
+    "appService.defaultWebAppToDeploy": "/subscriptions/207b19a0-884b-4b51-bd04-f1512c550995/resourceGroups/diabetic-web-app-rg/providers/Microsoft.Web/sites/diabetic-web-app",
+    "appService.deploySubpath": "."
+}
